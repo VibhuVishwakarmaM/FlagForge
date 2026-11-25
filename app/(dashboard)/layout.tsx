@@ -1,3 +1,4 @@
+import { AiCopilot } from '@/components/ai-copilot/ai-copilot'
 import { SidebarNav } from '@/components/layout/sidebar-nav'
 import { TopBar } from '@/components/layout/top-bar'
 import { EnvironmentProvider } from '@/components/providers/environment-provider'
@@ -14,6 +15,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-6 px-4 py-6 lg:px-8 lg:py-8">{children}</main>
         </div>
       </div>
+      <AiCopilot />
     </EnvironmentProvider>
   )
 }

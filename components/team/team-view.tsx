@@ -26,7 +26,7 @@ const roleOptions: { value: Role; label: string }[] = [
   { value: 'viewer', label: 'Viewer' },
 ]
 
-const roleDescriptions: Record<Role, string> = {
+export const roleDescriptions: Record<Role, string> = {
   admin: 'Full access, including members, SDK keys and workspace settings.',
   developer: 'Create and edit flags, rules and experiments in all environments.',
   viewer: 'Read-only access to flags, experiments, analytics and logs.',
